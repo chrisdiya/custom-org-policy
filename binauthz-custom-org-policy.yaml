@@ -1,0 +1,4 @@
+name: organizations/<ORG-ID>/policies/custom.enableBinAuth
+spec:
+  rules:
+  - enforce: true
