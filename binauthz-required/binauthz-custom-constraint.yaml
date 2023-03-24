@@ -3,7 +3,7 @@ resource_types: container.googleapis.com/Cluster
 method_types:
  - CREATE
  - UPDATE
-condition: resource.binaryAuthorization.enabled == true
+condition: resource.binaryAuthorization.evaluationMode == "PROJECT_SINGLETON_POLICY_ENFORCE"
 action_type: ALLOW
 display_name: Require GKE Binary Authorization
 description: Only allow GKE Cluster resource create or update if Binary Authorization is enabled.
