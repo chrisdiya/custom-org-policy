@@ -1,0 +1,4 @@
+name: organizations/<ORG-ID>/policies/custom.enableWorkloadIdentity
+spec:
+  rules:
+  - enforce: true

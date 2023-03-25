@@ -1,0 +1,9 @@
+name: organizations/<ORG-ID>/customConstraints/custom.enableWorkloadIdentity
+resourceTypes:
+- container.googleapis.com/Cluster
+methodTypes:
+- CREATE
+condition: has(resource.workloadIdentityConfig.workloadPool) || resource.workloadIdentityConfig.workloadPool.size() > 0
+actionType: ALLOW
+displayName: Enable Workload Identity on new clusters
+description: All new clusters must use Workload Identity.
