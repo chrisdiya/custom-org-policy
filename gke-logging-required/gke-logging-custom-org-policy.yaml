@@ -1,0 +1,4 @@
+name: organizations/<ORG-ID>/policies/custom.enableLogging
+spec:
+  rules:
+  - enforce: true

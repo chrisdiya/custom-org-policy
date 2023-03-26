@@ -1,0 +1,10 @@
+name: organizations/<ORG-ID>/customConstraints/custom.enableLogging
+resourceTypes:
+- container.googleapis.com/Cluster
+methodTypes:
+- CREATE
+- UPDATE
+condition: resource.loggingService == "none"
+actionType: DENY
+displayName: Do not disable Cloud Logging
+description: You cannot deploy a GKE cluster without Cloud Logging.
